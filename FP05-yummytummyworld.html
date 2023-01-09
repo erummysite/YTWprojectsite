@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title> FP05-yummytummy.html</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body  {
+ 
+  background-repeat: no-repeat, repeat;
+  background-color: #A4C639; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+}
+
+</style>
+<header>
+
+<!--Nav Bar-->
+<div class="container">
+
+<h1>Yummy Tummy World</h1>
+
+<ul class="nav nav-pills nav-justified" role="tablist">
+    <li class="active"><a href="FP05-yummytummyworld.html">Home</a></li>
+    <li><a href="FP05a-menu.html">Menu </a></li>
+    <li><a href="FP05b-Treatyourself.html">Treat yourself</a></li>
+    <li><a href="FP05c-About.html">About</a></li> 
+	<li><a href="FP05d-Contact.html">Contact Us</a></li>
+	<li><a href="FP05e-Contact.php"></a></li>
+  </ul>
+</div>
+
+</header>
+
+<body>
+
+<!-- Slide Show -->
+<section>
+
+  <img class="mySlides" src="img/shami-kebab.jpg" style="width:100%">
+  <img class="mySlides" src="img/prawns.jpg" Style="width:100%">
+  <img class="mySlides" src="img/biryani.jpg" Style="width:100%">
+  <img class="mySlides" src="img/samosa.jpg" Style="width:100%">
+  <img class="mySlides" src="img/food.jpg" Style="width:100%">
+  <img class="mySlides" src="img/falooda.jpg" Style="width:100%">
+  <img class="mySlides" src="img/kheer.jpg" Style="width:100%" >
+  
+
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:800px">
+  <h2 class="fp-wide">Welcome To Yummy Tummy World</h2>
+  <p class="fp-opacity"><i>Food that makes your tummy happy! </i></p>
+  <p class="w3-justify"><i>People eat to live, and we live to eat. In our culture, occasions are remembered mostly because of the quality of food served, for ages.
+
+Pakistani Food culture is hard to explain, but we can put some of the aspects in front of our audience so that they can get an idea about what Pakistani Cuisine really tastes like. So, here is a list of savoury food along with the speciality of being a cultural cuisine that we are going to explore today.
+<br>
+
+</br>
+
+
+ </i> </p>
+
+<!-- Footer -->
+<footer class="fp-container fp-padding-64 fp-center fp-black fp-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="fp-medium">
+  Powered by <a href="https://www.yummytummyworld.con" target="_blank">YTW.com</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
